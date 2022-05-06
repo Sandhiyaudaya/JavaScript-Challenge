@@ -1,3 +1,5 @@
+//Find the longest word in the sentence
+
 function LongestWord(sen) {
 
     var sp = sen.replace(/[^\w ]/g, "");
