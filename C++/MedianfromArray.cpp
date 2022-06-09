@@ -5,6 +5,8 @@ using namespace std;
 
 
 int calculateMedian(int A[], int sizeOfArray) {
+    //To sorted
+    // sort(A,A+n)
     // check for even case
     if (sizeOfArray % 2 != 0)
         return (int)A[sizeOfArray / 2];
