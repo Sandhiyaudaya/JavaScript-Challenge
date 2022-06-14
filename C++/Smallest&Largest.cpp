@@ -1,6 +1,21 @@
 #include<iostream>
 using namespace std;
- 
+ //Code Challege:
+
+ #include<bits/stdc++.h>
+using namespace std;
+
+
+pair<int, int> largestAndSmallest(int A[], int sizeOfArray) {
+    
+       sort(A, A + sizeOfArray);
+       
+       if(sizeOfArray == 1){
+           return std::make_pair(A[0],0);
+       }
+      return std::make_pair(A[(sizeOfArray -1)] ,A[0]);
+}
+
 // Pair struct is used to return
 // two values from getMinMax()
 struct Pair
@@ -63,3 +78,4 @@ int main()
           
     return 0;
 }
+
